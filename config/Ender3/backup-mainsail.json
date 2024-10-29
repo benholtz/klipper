@@ -1,0 +1,139 @@
+{
+    "gcodehistory": {
+        "entries": [
+            "PROBE_CALIBRATE",
+            "PROBE_CALIBRATE",
+            "PROBE_CALIBRATE",
+            "PROBE_CALIBRATE",
+            "PROBE_CALIBRATE",
+            "PROBE_CALIBRATE",
+            "PROBE_CALIBRATE",
+            "PROBE_CALIBRATE"
+        ]
+    },
+    "control": {
+        "style": "cross",
+        "selectedCrossStep": 0
+    },
+    "dashboard": {
+        "nonExpandPanels": {
+            "desktop": [
+                "machine-settings-panel",
+                "extruder-control-panel",
+                "toolhead-control-panel",
+                "miscellaneous-panel"
+            ],
+            "mobile": [
+                "macros-panel",
+                "machine-settings-panel",
+                "miscellaneous-panel",
+                "extruder-control-panel",
+                "toolhead-control-panel"
+            ]
+        },
+        "desktopLayout2": [
+            {
+                "name": "webcam",
+                "visible": true
+            },
+            {
+                "name": "miniconsole",
+                "visible": true
+            },
+            {
+                "name": "macros",
+                "visible": true
+            }
+        ],
+        "desktopLayout1": [
+            {
+                "name": "toolhead-control",
+                "visible": true
+            },
+            {
+                "name": "temperature",
+                "visible": true
+            },
+            {
+                "name": "extruder-control",
+                "visible": true
+            },
+            {
+                "name": "machine-settings",
+                "visible": true
+            },
+            {
+                "name": "miscellaneous",
+                "visible": true
+            }
+        ]
+    },
+    "gcodeViewer": {
+        "klipperCache": {
+            "kinematics": "cartesian",
+            "axis_maximum": [
+                232,
+                235,
+                200,
+                0
+            ],
+            "axis_minimum": [
+                0,
+                0,
+                -3,
+                0
+            ]
+        },
+        "colorMode": 2
+    },
+    "macros": {
+        "mode": "simple"
+    },
+    "uiSettings": {
+        "logo": "#D41216",
+        "primary": "#2196f3",
+        "theme": "mainsail",
+        "confirmOnEmergencyStop": true,
+        "confirmOnCoolDown": true,
+        "confirmOnPowerDeviceChange": true
+    },
+    "view": {
+        "tempchart": {
+            "autoscale": true
+        },
+        "history": {
+            "toggleChartCol3": "filament_usage"
+        }
+    },
+    "timelapse": {
+        "config": {
+            "camera": "pi cam v2",
+            "parkhead": true,
+            "variable_fps": false,
+            "park_retract_distance": 1.5,
+            "park_retract_speed": 35,
+            "park_extrude_speed": 35,
+            "park_extrude_distance": 1.5,
+            "parkpos": "center",
+            "park_travel_speed": 150
+        }
+    },
+    "webcams": {
+        "bf34ef1d-6777-40a2-99d2-d76681c7ff10": {
+            "name": "pi cam v2",
+            "service": "mjpegstreamer-adaptive",
+            "targetFps": 15,
+            "urlStream": "/webcam/?action=stream",
+            "urlSnapshot": "/webcam/?action=snapshot",
+            "flipX": false,
+            "flipY": false,
+            "enabled": true,
+            "targetFpsIdle": 15,
+            "aspectRatio": "4:3",
+            "icon": "mdiWebcam",
+            "location": "printer",
+            "rotation": 0,
+            "extra_data": {}
+        }
+    }
+}
